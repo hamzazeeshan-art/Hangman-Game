@@ -1,0 +1,86 @@
+.hangman-diagram {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    margin: 20px auto;
+    border-left: 5px solid #A888B5;
+    border-bottom: 5px solid #A888B5;
+  }
+  
+  .hangman-diagram .horizontal-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 5px;
+    background-color: #A888B5;
+  }
+  
+  .hangman-diagram .rope {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 5px;
+    height: 60px;
+    font-weight: bold;
+    background-color: #A888B5;
+  }
+  
+  .hangman-diagram .head {
+    position: absolute;
+    top: 55px;
+    left: 133px;
+    width: 30px;
+    height: 40px; 
+    border-radius: 50%;
+    border:5px solid #A888B5;
+  }
+  
+  .hangman-diagram .body {
+    position: absolute;
+    top: 105px;
+    left: 153px;
+    width: 5px;
+    height: 67px;
+    background-color: #A888B5;
+  }
+  
+  .hangman-diagram .arm-left,
+  .hangman-diagram .arm-right {
+    position: absolute;
+    top: 130px;
+    width: 50px;
+    height: 5px;
+    background-color: #A888B5;
+  }
+  
+  .hangman-diagram .arm-left {
+    left: 113px;
+    transform: rotate(135deg);
+  }
+  
+  .hangman-diagram .arm-right {
+    left: 147px;
+    transform: rotate(45deg);
+  }
+  
+  .hangman-diagram .leg-left,
+  .hangman-diagram .leg-right {
+    position: absolute;
+    top: 185px;
+    width: 60px;
+    height: 5px;
+    transform-origin: bottom;
+    background-color: #A888B5;
+  }
+  
+  .hangman-diagram .leg-left {
+    left: 105px;
+    transform: rotate(-45deg);
+  }
+  
+  .hangman-diagram .leg-right {
+    left: 145px;
+    transform: rotate(45deg);
+  }
+  

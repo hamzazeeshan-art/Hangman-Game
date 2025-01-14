@@ -1,0 +1,31 @@
+/* Container for the hangman word */
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Spacing between letters */
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+/* Styling for each letter */
+.word {
+    font-family: 'Courier New', Courier, monospace; /* Classic typewriter style font */
+    font-size: 5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #000; /* Black color */
+    background: none; /* No background */
+    border: none; /* No border */
+    padding:10px; /* Remove default padding */
+    text-align: center;
+}
+
+.word.not-visible{
+    color: transparent;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.word.game-over{
+    color: red;
+}

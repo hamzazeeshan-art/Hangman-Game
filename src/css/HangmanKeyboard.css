@@ -1,0 +1,35 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8174A0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.key:hover {
+    background-color: lightblue;
+}
+
+.key:active {
+    background-color: cyan;
+}
+
+.key.disabled {
+    background-color: #EFB6C8;
+    cursor: not-allowed;
+}
