@@ -13,7 +13,7 @@ const RandomWords = [
 
 function App() {
   let RandomIndex = Math.floor(Math.random() * RandomWords.length);
-  let [HangmanWord, SetHangmanWord] = useState(RandomWords[RandomIndex]);
+  let [HangmanWord] = useState(RandomWords[RandomIndex]);
   let [GuessedWord, SetGuessedWord] = useState("");
   
   // Calculate Incorrect Guesses
